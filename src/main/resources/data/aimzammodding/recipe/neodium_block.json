@@ -1,0 +1,18 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key" : {
+    "A":{
+      "item": "aimzammodding:ingot_neodium"
+    }
+  },
+  "pattern" : [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result" : {
+    "count" : 1,
+    "id" : "aimzammodding:neodium_block"
+  }
+}
