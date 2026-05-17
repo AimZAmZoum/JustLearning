@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all" : "aimzammodding:block/neodium_block"
+  }
+}

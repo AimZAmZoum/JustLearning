@@ -1,6 +1,7 @@
 package net.AimZAm.JustLearning;
 
 import com.mojang.logging.LogUtils;
+import net.AimZAm.JustLearning.block.ModBlocks;
 import net.AimZAm.JustLearning.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,7 +37,9 @@ public class LearningMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        //on passe l'enregistrement des items et des blocs dans le constructeur
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -58,6 +61,10 @@ public class LearningMod {
             event.accept(ModItems.INGOT_NEODIUM);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ModBlocks.NEODIUM_BLOCK));
+            event.accept((ModBlocks.RAW_NEODIUM_BLOCK));
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
