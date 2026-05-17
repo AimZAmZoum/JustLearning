@@ -5,6 +5,8 @@
 
   "block.aimzammodding.neodium_block" : "Neodium Block",
   "block.aimzammodding.raw_neodium_block" : "Raw Neodium Block",
+  "block.aimzammodding.neodium_ore" : "Neodium Ore",
+  "block.aimzammodding.neodium_deepslate_ore" : "Neodium Deepslate Ore",
 
-  "creativetab.aimzammodding.neodium_items" : "Neodium"
+  "creativetab.aimzammodding.neodium_item s" : "Neodium"
 }

@@ -1,0 +1,9 @@
+{
+  "replace" : false,
+  "values" : [
+    "aimzammodding:neodium_block",
+    "aimzammodding:neodium_ore",
+    "aimzammodding:neodium_deepslate_ore",
+    "aimzammodding:raw_neodium_block"
+  ]
+}

@@ -67,6 +67,8 @@ public class AimzamModding {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept((ModBlocks.NEODIUM_BLOCK));
             event.accept((ModBlocks.RAW_NEODIUM_BLOCK));
+            event.accept((ModBlocks.NEODIUM_ORE));
+            event.accept((ModBlocks.NEODIUM_DEEPSLATE_ORE));
         }
     }
 
