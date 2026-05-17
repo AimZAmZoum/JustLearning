@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.AimZAm.JustLearning.block.ModBlocks;
 import net.AimZAm.JustLearning.item.ModCreativeModeTab;
 import net.AimZAm.JustLearning.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,14 +20,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(LearningMod.MOD_ID)
-public class LearningMod {
+@Mod(AimzamModding.MOD_ID)
+public class AimzamModding {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "aimzammodding";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public LearningMod()
+    public AimzamModding()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

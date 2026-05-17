@@ -1,6 +1,6 @@
 package net.AimZAm.JustLearning.block;
 
-import net.AimZAm.JustLearning.LearningMod;
+import net.AimZAm.JustLearning.AimzamModding;
 import net.AimZAm.JustLearning.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     //pareil que pour les items on fait une liste des blocs qui seront ajoutés dans le mod
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, LearningMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, AimzamModding.MOD_ID);
 
     //ici on déclare notre block de neodium
     public static final RegistryObject<Block> NEODIUM_BLOCK = registerBlock("neodium_block",

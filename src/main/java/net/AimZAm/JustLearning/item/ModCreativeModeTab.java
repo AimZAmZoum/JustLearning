@@ -1,7 +1,6 @@
 package net.AimZAm.JustLearning.item;
 
-import com.mojang.brigadier.LiteralMessage;
-import net.AimZAm.JustLearning.LearningMod;
+import net.AimZAm.JustLearning.AimzamModding;
 import net.AimZAm.JustLearning.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -13,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LearningMod.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AimzamModding.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> NEODIUM_ITEMS_TAB = CREATIVE_MODE_TAB.register("neodium_items_tab",
             ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.NEODIUM.get())).

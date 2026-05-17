@@ -1,6 +1,6 @@
 package net.AimZAm.JustLearning.item;
 
-import net.AimZAm.JustLearning.LearningMod;
+import net.AimZAm.JustLearning.AimzamModding;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,7 +11,7 @@ public class ModItems {
 
     //DeferredRegister sert a ce que la liste d'items soient enregistré en temps voulu
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, LearningMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, AimzamModding.MOD_ID);
 
     //ici on enregistre notre ITEM en istanciant un nouvel item
     public static final RegistryObject<Item> NEODIUM = ITEMS.register("neodium",
