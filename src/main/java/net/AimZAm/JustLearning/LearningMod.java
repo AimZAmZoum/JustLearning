@@ -2,6 +2,7 @@ package net.AimZAm.JustLearning;
 
 import com.mojang.logging.LogUtils;
 import net.AimZAm.JustLearning.block.ModBlocks;
+import net.AimZAm.JustLearning.item.ModCreativeModeTab;
 import net.AimZAm.JustLearning.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,9 @@ public class LearningMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        //on enregistre la page du mode créatif
+        ModCreativeModeTab.register(modEventBus);
 
         //on passe l'enregistrement des items et des blocs dans le constructeur
         ModItems.register(modEventBus);
