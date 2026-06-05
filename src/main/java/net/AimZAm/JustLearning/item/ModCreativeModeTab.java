@@ -22,6 +22,8 @@ public class ModCreativeModeTab {
                         output.accept(ModItems.INGOT_NEODIUM.get());
                         output.accept(ModBlocks.RAW_NEODIUM_BLOCK.get());
                         output.accept(ModBlocks.NEODIUM_BLOCK.get());
+                        output.accept(ModBlocks.NEODIUM_ORE.get());
+                        output.accept(ModBlocks.NEODIUM_DEEPSLATE_ORE.get());
 
                     }).build());
 
