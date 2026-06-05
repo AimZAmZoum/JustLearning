@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0" : "aimzammodding:item/neodium_chisel"
+  }
+}

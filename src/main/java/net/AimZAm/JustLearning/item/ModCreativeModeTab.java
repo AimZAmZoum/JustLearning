@@ -20,11 +20,12 @@ public class ModCreativeModeTab {
                     .displayItems((itemDisplayParameters,output) -> {
                         output.accept(ModItems.NEODIUM.get());
                         output.accept(ModItems.INGOT_NEODIUM.get());
+                        output.accept(ModItems.NEODIUM_CHISEL.get());
+
                         output.accept(ModBlocks.RAW_NEODIUM_BLOCK.get());
                         output.accept(ModBlocks.NEODIUM_BLOCK.get());
                         output.accept(ModBlocks.NEODIUM_ORE.get());
                         output.accept(ModBlocks.NEODIUM_DEEPSLATE_ORE.get());
-
                     }).build());
 
 
